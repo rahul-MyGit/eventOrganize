@@ -1,16 +1,16 @@
+import { Navbar } from "@repo/custom-component";
 
-interface AuthLayoutProps{
+interface AuthLayoutProps {
     children: React.ReactNode;
 }
 
-export default function AuthLayout({children} : AuthLayoutProps) {
+export default function AuthLayout({ children }: AuthLayoutProps) {
     return (
         <>
-        <div>
-            {/* <Navbar /> */}
-            hehe
-        {children}
-        </div>
+            <Navbar />
+            <div className="min-h-screen pt-20 flex flex-col">
+                {children}
+            </div>
         </>
     )
 }
