@@ -2,7 +2,7 @@
 const nextConfig = {
 
   reactStrictMode: true,
-  transpilePackages: ["@repo/ui"],
+  transpilePackages: ["@repo/ui", "@repo/custom-component"],
 
 };
 

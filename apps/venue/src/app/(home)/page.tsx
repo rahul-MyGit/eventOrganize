@@ -3,7 +3,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import React, { useState, useEffect } from 'react'
 import { useQuery } from '@tanstack/react-query'
-import { Button } from '@repo/ui'
+import { Button } from '@repo/custom-component'
+
 const page = () => {
   return (
     <div className="bg-background w-screen h-svh pb-8">
