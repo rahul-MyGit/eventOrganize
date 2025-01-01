@@ -10,37 +10,21 @@ const page = () => {
       <div className="max-w-screen-lg w-full mx-auto h-full font-roboto grid grid-cols-2 pt-[10%]">
         <div>
           <h1 className="text-5xl font-bold text-primary capitalize tracking-[-.0325em] leading-[1.1]">
-            create <span className="uppercase">super</span> turbo
+            Venue <span className="uppercase">Dashboard</span>
           </h1>
           <p className="text-lg text-foreground/70 leading-[28px] tracking-[-0.37px] font-medium my-2">
-            Kickstart your Next.js project in a flash with Create Super Turbo!
+            Add venue details to get booked for events
           </p>
           <ol className="font-mono list-decimal pl-8">
-            <li>Get started by editing src/app/page.tsx.</li>
-            <li>Save and see your changes instantly.</li>
+            <li>Register your place and Add photos</li>
+            <li>After verifying by us, it'll be public for everyone</li>
           </ol>
           <div className="flex gap-4 my-4">
             <Button asChild>
-              <Link href="#">Start Building</Link>
+              <Link href={'/signup'}>Start with Signup</Link>
             </Button>
-            <Button asChild variant={'link'} className="gap-1">
-              <Link href="https://nextjs.org/" target="_blank">
-                <Image
-                  width={16}
-                  height={16}
-                  src={'/globe.svg'}
-                  alt="Globe"
-                  className="h-4 dark:invert opacity-50 mr-1"
-                />
-                Go to nextjs.org
-                <Image
-                  width={16}
-                  height={16}
-                  src={'/arrow.svg'}
-                  alt="Arrow right"
-                  className="h-4 dark:invert"
-                />
-              </Link>
+            <Button asChild>
+              <Link href={'/login'}>Login</Link>
             </Button>
           </div>
         </div>
@@ -54,7 +38,7 @@ function GithubStar() {
   const { isPending, error, data } = useQuery({
     queryKey: ['repoData'],
     queryFn: () =>
-      fetch('https://api.github.com/repos/ofcljaved/chess').then((res) =>
+      fetch('https://api.github.com/repos/rahul-MyGit/eventOrganize').then((res) =>
         res.json(),
       ),
   })
@@ -68,7 +52,7 @@ function GithubStar() {
   return (
     <Button asChild variant={'outline'} className="gap-1 justify-self-end">
       <Link
-        href="https://github.com/super-turbo-stack/create-super-turbo"
+        href="https://github.com/rahul-MyGit/eventOrganize"
         target="_blank"
       >
         <Image
